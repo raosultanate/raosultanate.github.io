@@ -281,6 +281,19 @@
       font-size: 0.95rem;
     }
 
+    .card p + p {
+      margin-top: 12px;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--text);
+      font-weight: 800;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+    }
+
     .timeline {
       display: grid;
       gap: 16px;
@@ -326,6 +339,36 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--surface);
+      box-shadow: 0 10px 28px rgba(20, 32, 51, 0.05);
+      font-size: 0.93rem;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--text);
+      background: #f2f6fb;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
     }
 
     .skill {
@@ -420,6 +463,13 @@
         font-size: 1rem;
         overflow-wrap: break-word;
       }
+
+      table {
+        display: block;
+        max-width: 330px;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
     }
   </style>
 </head>
@@ -432,7 +482,10 @@
       </a>
       <div class="nav-links">
         <a href="#work">Work</a>
+        <a href="#timeline">Timeline</a>
         <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#support">Support</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
@@ -445,9 +498,9 @@
       <div>
         <h1>Backend engineer for cloud platforms and production systems.</h1>
         <p>
-          I am a Software Development Engineer at Amazon Web Services, focused on backend services,
-          cloud infrastructure, operational tooling, and systems that need to be observable,
-          secure, and reliable under real customer pressure.
+          I am a Software Development Engineer at Amazon Web Services. I have shipped 207+ reviewed
+          code changes across backend services, cloud infrastructure, operational tooling, migration
+          work, and systems that need to be observable, secure, and reliable under real customer pressure.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="https://www.linkedin.com/in/daniel-rao-511a67207/">LinkedIn</a>
@@ -458,12 +511,24 @@
       <aside class="snapshot" aria-label="Career snapshot">
         <h2>Snapshot</h2>
         <div class="metric">
+          <strong>207+</strong>
+          <span>reviewed production code changes shipped as an SDE</span>
+        </div>
+        <div class="metric">
+          <strong>161</strong>
+          <span>engineering tasks across backend, infrastructure, tooling, and operations</span>
+        </div>
+        <div class="metric">
           <strong>40+</strong>
-          <span>internal service packages contributed to as an SDE</span>
+          <span>internal service packages contributed to across the platform</span>
         </div>
         <div class="metric">
           <strong>9</strong>
-          <span>AWS regions supported through global launch work</span>
+          <span>AWS regions supported through global service launch work</span>
+        </div>
+        <div class="metric">
+          <strong>6</strong>
+          <span>backend endpoints built for operational investigation workflows</span>
         </div>
         <div class="metric">
           <strong>2.5y</strong>
@@ -476,12 +541,77 @@
       </aside>
     </section>
 
+    <section id="timeline">
+      <div class="section-heading">
+        <h2>Timeline</h2>
+        <p>
+          My path moves from production support into software engineering. The through-line is practical systems work:
+          understand the failure mode, build the fix, make it observable, and leave the next engineer with a clearer path.
+        </p>
+      </div>
+
+      <table aria-label="Career timeline">
+        <thead>
+          <tr>
+            <th>Period</th>
+            <th>Role</th>
+            <th>Focus</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aug 2022 - Dec 2022</td>
+            <td>Cloud Support Associate, AWS</td>
+            <td>Big data support onboarding, EMR/Hadoop/Spark fundamentals, customer case ownership.</td>
+            <td>Boise, ID</td>
+          </tr>
+          <tr>
+            <td>Dec 2022 - Apr 2023</td>
+            <td>Cloud Support Associate, AWS</td>
+            <td>Distributed processing support, production troubleshooting, log analysis.</td>
+            <td>Boise, ID</td>
+          </tr>
+          <tr>
+            <td>May 2023 - Oct 2023</td>
+            <td>Cloud Support Engineer I, AWS</td>
+            <td>EMR/Hadoop specialist support, customer escalations, root-cause analysis.</td>
+            <td>Boise, ID</td>
+          </tr>
+          <tr>
+            <td>Oct 2023 - Jun 2025</td>
+            <td>Cloud Support Engineer I, AWS</td>
+            <td>GovCloud/generalist support across AWS infrastructure services.</td>
+            <td>Boise, ID</td>
+          </tr>
+          <tr>
+            <td>Jul 2024 - Apr 2025</td>
+            <td>Internal CSE to SDE transition program</td>
+            <td>Software engineering training while continuing support casework.</td>
+            <td>Boise, ID</td>
+          </tr>
+          <tr>
+            <td>Mar 2025 - Apr 2025</td>
+            <td>SDE internship-style placement, AWS</td>
+            <td>Full-stack operational tooling, backend APIs, infrastructure, frontend, tests.</td>
+            <td>Seattle, WA</td>
+          </tr>
+          <tr>
+            <td>Jun 2025 - Present</td>
+            <td>Software Development Engineer I, AWS</td>
+            <td>Backend/platform services, region expansion, deletion workflows, migrations, operational tooling.</td>
+            <td>Seattle, WA</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
     <section id="work">
       <div class="section-heading">
         <h2>Experience</h2>
         <p>
-          My path runs from customer-facing cloud support into software engineering, which gives me a practical
-          bias for systems that can be understood and operated when something breaks.
+          My current SDE work covers backend services, workflow orchestration, migration planning, infrastructure,
+          observability, and operational tooling for a production cloud platform.
         </p>
       </div>
 
@@ -492,14 +622,17 @@
             <h3>Software Development Engineer, Amazon Web Services</h3>
             <p>
               Backend and platform engineering for an AI-powered code transformation product. Work includes APIs,
-              job lifecycle services, workspace and artifact workflows, feature rollout, observability, deployment
-              configuration, and internal operations tools.
+              job lifecycle services, workspace and artifact workflows, agent metadata, feature rollout, observability,
+              deployment configuration, internal operations tools, and production readiness across regions.
             </p>
             <ul>
-              <li>Contributed production changes across 40+ internal service packages.</li>
-              <li>Helped expand service availability across multiple global AWS regions.</li>
-              <li>Built workflow-based improvements for compliance-sensitive data deletion.</li>
-              <li>Delivered operational tooling that reduced manual investigation effort for engineers.</li>
+              <li>Shipped 207+ reviewed changes across Java, TypeScript, Python, React, AWS CDK, service models, and integration tests.</li>
+              <li>Helped expand service availability across 9 AWS regions, touching 15+ services and their rollout configuration.</li>
+              <li>Built a full-stack operational tool with 6 backend endpoints for job, workspace, user, and notification workflows.</li>
+              <li>Reworked a deletion path into an orchestrated Step Functions workflow with retries, alarms, and idempotent execution.</li>
+              <li>Supported job type and agent configuration migration from static patterns toward dynamic runtime metadata.</li>
+              <li>Supported customer-owned S3 storage rollout work involving feature flags, validation, and security controls.</li>
+              <li>Added availability monitoring and worked on security/platform stability improvements.</li>
             </ul>
           </div>
         </article>
@@ -515,7 +648,8 @@
             </p>
             <ul>
               <li>Specialized in EMR, Spark, Hadoop, S3, IAM, EC2, VPC, RDS, Systems Manager, and related services.</li>
-              <li>Investigated distributed systems failures involving storage access, memory pressure, cluster startup, and service configuration.</li>
+              <li>Investigated distributed systems failures involving storage access, memory pressure, cluster startup, IAM configuration, and service integration.</li>
+              <li>Built habits in root cause analysis, incident communication, and customer-focused debugging that now shape my engineering work.</li>
               <li>Transitioned into software engineering through an internal engineering development program.</li>
             </ul>
           </div>
@@ -527,8 +661,8 @@
       <div class="section-heading">
         <h2>Selected Work</h2>
         <p>
-          A public-safe summary of professional and academic projects. Details are intentionally generalized where
-          the underlying systems are private or company-internal.
+          A public-safe summary of my major workstreams. Each item keeps the practical substance: why it mattered,
+          what I did, the impact, and the technologies involved.
         </p>
       </div>
 
@@ -536,48 +670,226 @@
         <article class="card">
           <h3>Operational Job Investigation Tool</h3>
           <p>
-            Built a full-stack internal tool that gave engineers a single place to inspect job, workspace, user, and
-            notification context during production investigations.
+            <span class="label">Why</span>
+            Engineers needed a faster way to correlate job state, workspace metadata, user context, and notifications.
+          </p>
+          <p>
+            <span class="label">What</span>
+            Built a full-stack tool with 6 backend endpoints, frontend workflows, infrastructure, tests, and security fixes.
+          </p>
+          <p>
+            <span class="label">Impact / Tech</span>
+            Reduced common investigations from 30+ minutes to under 5. Java, TypeScript, React, AWS CDK, Lambda, API Gateway.
           </p>
         </article>
 
         <article class="card">
           <h3>Global Region Launch Work</h3>
           <p>
-            Updated infrastructure, pipelines, service tests, throttling configuration, and monitoring to support
-            service expansion across additional AWS regions.
+            <span class="label">Why</span>
+            Customers needed broader regional availability for latency, residency, regulatory, and operational reasons.
+          </p>
+          <p>
+            <span class="label">What</span>
+            Updated infrastructure, pipelines, service tests, throttling, service config, observability, and rollout readiness.
+          </p>
+          <p>
+            <span class="label">Impact / Tech</span>
+            Supported expansion across 9 AWS regions and 15+ services. AWS CDK, TypeScript, Java, CloudWatch, CI/CD.
           </p>
         </article>
 
         <article class="card">
           <h3>Data Deletion Workflow</h3>
           <p>
-            Implemented a more observable and retryable workflow for customer data lifecycle handling, with emphasis
-            on idempotency, alarms, and gradual rollout.
+            <span class="label">Why</span>
+            Compliance-sensitive deletion needed stronger orchestration, retries, auditability, and failure visibility.
+          </p>
+          <p>
+            <span class="label">What</span>
+            Helped move deletion from event-style behavior toward staged orchestration with pagination, polling, and feature flags.
+          </p>
+          <p>
+            <span class="label">Impact / Tech</span>
+            Reduced silent-failure risk. Java, TypeScript, AWS CDK, Lambda, Step Functions, DynamoDB, API Gateway, CloudWatch.
           </p>
         </article>
 
         <article class="card">
-          <h3>Customer Storage Feature</h3>
+          <h3>Job Type and Agent Migration</h3>
           <p>
-            Supported rollout work for customer-owned storage integrations, including validation, security controls,
-            and cross-service coordination.
+            <span class="label">Why</span>
+            Static job-type configuration slowed onboarding as the platform grew into a larger agent ecosystem.
+          </p>
+          <p>
+            <span class="label">What</span>
+            Mapped agent usage, migrated metrics dimensions, supported runtime configuration, validated feature flags, and owned migration tasks.
+          </p>
+          <p>
+            <span class="label">Impact / Tech</span>
+            Made agent onboarding safer and less code-bound. Java, Python, TypeScript, CloudWatch metrics, feature flags, CI/CD.
           </p>
         </article>
 
         <article class="card">
-          <h3>Integration Test Reliability</h3>
+          <h3>Availability Monitoring</h3>
           <p>
-            Improved cleanup paths in integration tests so failed test runs left fewer orphaned resources and created
-            less friction for other engineers.
+            <span class="label">Why</span>
+            Critical service paths needed clear production health signals and threshold-based alerting.
+          </p>
+          <p>
+            <span class="label">What</span>
+            Added end-to-end monitoring across critical services with availability thresholds, dashboards, and alerting.
+          </p>
+          <p>
+            <span class="label">Impact / Tech</span>
+            Improved operational readiness. CloudWatch metrics, alarms, dashboards, canaries, infrastructure configuration.
           </p>
         </article>
 
         <article class="card">
-          <h3>EMA Research Survey App</h3>
+          <h3>Customer-Owned S3 Storage</h3>
           <p>
-            Built the Django web console, containerization, CI/CD, and deployment setup for a Boise State senior
-            capstone research survey platform.
+            <span class="label">Why</span>
+            Customers needed more control over artifact storage and access boundaries.
+          </p>
+          <p>
+            <span class="label">What</span>
+            Supported staged rollout, validation, security-control testing, cross-service coordination, and artifact format support.
+          </p>
+          <p>
+            <span class="label">Impact / Tech</span>
+            Helped productionize customer-owned storage. S3, KMS, IAM-style controls, Java, TypeScript, AWS CDK, feature flags.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Agent Lifecycle API Foundation</h3>
+          <p>
+            <span class="label">Why</span>
+            Dynamic agent ecosystems need safe lifecycle operations instead of hardcoded assumptions.
+          </p>
+          <p>
+            <span class="label">What</span>
+            Contributed backend API work supporting agent registration, deregistration, discovery, and migration paths.
+          </p>
+          <p>
+            <span class="label">Impact / Tech</span>
+            Helped create cleaner onboarding foundations. Java, service APIs, service modeling, validation, integration tests.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Security and Platform Stability</h3>
+          <p>
+            <span class="label">Why</span>
+            Platform teams need continuous hardening without sacrificing production stability.
+          </p>
+          <p>
+            <span class="label">What</span>
+            Worked on TLS posture, sensitive-data filtering, confused-deputy style protections, alarm investigation, test cleanup, and onboarding docs.
+          </p>
+          <p>
+            <span class="label">Impact / Tech</span>
+            Improved production safety and reduced operational friction. Java, TypeScript, AWS CDK, IAM controls, CloudWatch.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="section-heading">
+        <h2>Tech Stack by Area</h2>
+        <p>
+          A more explicit view of the technologies I used across professional work, support investigations, and
+          academic projects.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>SDE Backend and Platform</h3>
+          <p>Java, TypeScript, Python, service APIs, service modeling, backend handlers, validation, dependency injection patterns, integration tests.</p>
+        </article>
+        <article class="card">
+          <h3>AWS Infrastructure</h3>
+          <p>AWS CDK, Lambda, Step Functions, API Gateway, DynamoDB, S3, KMS, SNS, SQS, CloudWatch, IAM-style authorization, CI/CD pipelines.</p>
+        </article>
+        <article class="card">
+          <h3>Frontend and Tooling</h3>
+          <p>React, TypeScript, operational UI workflows, job/workspace/user lookup flows, notification flows, frontend security cleanup.</p>
+        </article>
+        <article class="card">
+          <h3>Observability and Operations</h3>
+          <p>CloudWatch metrics, alarms, dashboards, canaries, availability thresholds, failure-mode analysis, runbook-oriented thinking.</p>
+        </article>
+        <article class="card">
+          <h3>Support and Debugging</h3>
+          <p>EMR, Spark, Hadoop, Hive, Presto/Trino, YARN, HBase, S3, IAM, VPC, EC2, RDS, CloudTrail, Linux, JVM/GC analysis.</p>
+        </article>
+        <article class="card">
+          <h3>Academic and Capstone</h3>
+          <p>Python, Django, Docker, Nginx, Gunicorn, GitHub Actions, SQLite, Heroku, Java, C, Kotlin, PHP, MATLAB.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="support">
+      <div class="section-heading">
+        <h2>Support Background</h2>
+        <p>
+          My earlier AWS support roles are part of the engineering story: they gave me production judgment,
+          customer empathy, and deep debugging practice across distributed systems.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>GovCloud and Generalist Support</h3>
+          <p>
+            <span class="label">What</span>
+            Supported public-sector and regulated customers across cloud infrastructure services, reproducing issues,
+            analyzing logs, and coordinating with service teams.
+          </p>
+          <p>
+            <span class="label">Why</span>
+            Regulated workloads require precise communication, careful handling, and broad AWS knowledge during production issues.
+          </p>
+          <p>
+            <span class="label">Tech</span>
+            S3, Systems Manager, WorkSpaces, SageMaker, Bedrock, EC2, RDS, VPC, IAM, CloudTrail, CloudWatch, Linux, AWS CLI.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Big Data and EMR Specialist</h3>
+          <p>
+            <span class="label">What</span>
+            Investigated Spark, Hadoop, Hive, Presto/Trino, storage, IAM, cluster startup, memory, GC, and metastore issues.
+          </p>
+          <p>
+            <span class="label">Why</span>
+            Big data customers depend on stable pipelines, and failures often span compute, storage, IAM, and distributed job scheduling.
+          </p>
+          <p>
+            <span class="label">Tech</span>
+            EMR, Spark, Hadoop, Hive, Presto/Trino, YARN, HBase, S3, IAM, JVM/GC analysis, Linux, distributed systems debugging.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>CSE to SDE Transition</h3>
+          <p>
+            <span class="label">What</span>
+            Completed internal software engineering training and an SDE placement while continuing customer-facing support work.
+          </p>
+          <p>
+            <span class="label">Why</span>
+            This was the bridge from diagnosing production systems to building them directly.
+          </p>
+          <p>
+            <span class="label">Tech</span>
+            Java, Python, software design, backend development, testing, data structures, production engineering practices.
           </p>
         </article>
       </div>
@@ -623,15 +935,35 @@
       <div class="grid">
         <article class="card">
           <h3>Computer Science</h3>
-          <p>Software engineering, operating systems, algorithms, databases, systems programming, programming languages, and data structures.</p>
+          <p>Software Engineering, Operating Systems, Algorithms, Databases, Theory of Computation, Programming Languages, Data Structures, Systems Programming, Computer Science II / OOP.</p>
         </article>
         <article class="card">
           <h3>Cybersecurity</h3>
           <p>Computer security, ethical hacking, network security and defense, and security-focused engineering habits.</p>
         </article>
         <article class="card">
+          <h3>Web and Mobile</h3>
+          <p>Web Development and Mobile Application Development, including backend/frontend project work and mobile application fundamentals.</p>
+        </article>
+        <article class="card">
+          <h3>Hardware and Systems</h3>
+          <p>Microprocessors, Digital Systems, and Computer Engineering coursework.</p>
+        </article>
+        <article class="card">
           <h3>Applied Mathematics</h3>
           <p>Probability and statistics, differential equations, multivariable calculus, discrete mathematics, and computational mathematics.</p>
+        </article>
+        <article class="card">
+          <h3>Other Coursework</h3>
+          <p>Ethical Issues in Computing, database systems, and STEM education coursework involving teaching, research methods, and classroom interaction.</p>
+        </article>
+        <article class="card">
+          <h3>Senior Capstone</h3>
+          <p>Built the Django web console, authentication, data views, Docker setup, Nginx/Gunicorn config, GitHub Actions CI/CD, and deployment for an EMA research survey platform.</p>
+        </article>
+        <article class="card">
+          <h3>Capstone Tech Stack</h3>
+          <p>Python, Django, Docker, docker-compose, Nginx, Gunicorn, GitHub Actions, SQLite, Heroku.</p>
         </article>
       </div>
     </section>
