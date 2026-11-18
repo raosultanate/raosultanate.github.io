@@ -1,6 +1,6 @@
 # Daniel Rao
 
-Software Development Engineer at Amazon Web Services in Seattle, Washington.
+Java Engineer at HALO Branded Solutions in Seattle, Washington. Previously a Software Development Engineer at Amazon Web Services.
 
 I build backend and platform systems for large-scale cloud services. My work spans service orchestration, operational tooling, global launches, data lifecycle workflows, migration planning, security validation, and customer-facing production support. Before moving into software engineering, I worked as an AWS Cloud Support Engineer, which shaped how I build systems: observable, debuggable, secure, and practical for the people who operate them.
 
@@ -30,7 +30,8 @@ I build backend and platform systems for large-scale cloud services. My work spa
 | Oct 2023 - Jun 2025 | Cloud Support Engineer I, AWS | GovCloud/generalist support across AWS infrastructure services | Boise, ID |
 | Jul 2024 - Apr 2025 | Internal CSE to SDE transition program | Software engineering training while continuing support casework | Boise, ID |
 | Mar 2025 - Apr 2025 | SDE internship-style placement, AWS | Full-stack operational tooling, backend APIs, infrastructure, frontend, tests | Seattle, WA |
-| Jun 2025 - Present | Software Development Engineer I, AWS | Backend/platform services, region expansion, deletion workflows, migrations, operational tooling | Seattle, WA |
+| Jun 2025 - May 2026 | Software Development Engineer I, AWS | Backend/platform services, region expansion, deletion workflows, migrations, operational tooling | Seattle, WA |
+| Oct 2026 - Present | Java Engineer, HALO Branded Solutions | Backend/API engineering for HALO Connect, supporting MStar integrations | Seattle, WA (Remote) |
 
 ## How My Work Fits Together
 
@@ -38,11 +39,15 @@ My career has three connected phases:
 
 1. **Production support foundation:** I learned how customers experience failures, how distributed systems break, how to read logs and metrics, and how to communicate during ambiguous incidents.
 2. **Engineering transition:** I moved from support into development through structured training and an internship-style engineering placement, carrying operational judgment into software design.
-3. **Platform engineering:** I now build backend services, infrastructure, migration paths, workflow orchestration, and internal tooling for a production cloud platform.
+3. **Platform engineering:** I built backend services, infrastructure, migration paths, workflow orchestration, and internal tooling for a production cloud platform at AWS — and I now build backend services and APIs for the HALO Connect integrations platform at HALO.
 
-## Current Work: Software Development Engineer, AWS
+## Current Work: Java Engineer, HALO Branded Solutions
 
-I work on backend and platform services for an AI-powered code transformation product. The platform coordinates job creation, execution, artifact handling, workspace state, customer configuration, notifications, and operational workflows for enterprise modernization use cases.
+I build backend services and APIs on the Integrations team for HALO Connect, HALO's integrations platform, including support for the MStar product.
+
+## Previous Work: Software Development Engineer, AWS
+
+I worked on backend and platform services for an AI-powered code transformation product. The platform coordinates job creation, execution, artifact handling, workspace state, customer configuration, notifications, and operational workflows for enterprise modernization use cases.
 
 ### Core Tech Stack
 
